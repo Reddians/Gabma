@@ -92,38 +92,37 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 mb-5">
-            <form action="#" class="p-5 bg-white">          
+            <form class="p-5 bg-white"  method="POST" action="php/contactanos.php">          
               <h2 class="h4 text-black mb-5">Formulario de contacto</h2> 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Nombres:</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Ejm: Juan Andres" required>
+                  <input type="text" id="fname" name="nombresCliente" class="form-control" placeholder="Ejm: Juan Andres" required>
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="lname">Apellidos:</label>
-                  <input type="text" id="lname" class="form-control" placeholder="Ejm: Valdez Rojas" required>
+                  <input type="text" id="lname" name="apellidosCliente" class="form-control" placeholder="Ejm: Valdez Rojas" required>
                 </div>
               </div>
               <div class="row form-group">                
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control" placeholder="Ejm: email@dominio.com" required>
+                  <input type="email" id="email" name="emailCliente" class="form-control" placeholder="Ejm: email@dominio.com" required>
                 </div>
               </div>
               <div class="row form-group">
                  <div class="col-md-12">
                   <label class="text-black" for="subject">Teléfono:</label> 
-                  <input type="number" id="subject" class="form-control" placeholder="3210010002" required>
+                  <input type="number" id="subject" name="telefonoCliente" class="form-control" placeholder="3210010002" required>
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Mensaje:</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tu mensaje aqui..." required></textarea>
+                  <textarea id="message" name="mensajeCliente" cols="30" rows="7" class="form-control" placeholder="Escribe tu mensaje aqui..." required></textarea>
                 </div>
               </div>
-
               <div class="row form-group">
                 <div class="col-md-12">
                   <input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-md text-white">
